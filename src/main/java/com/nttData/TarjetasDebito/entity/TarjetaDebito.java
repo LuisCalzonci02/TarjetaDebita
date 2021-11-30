@@ -7,7 +7,7 @@ import lombok.Setter;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "TarjetaDebitp")
+@Table(name = "TarjetaDebito")
 @Getter @Setter
 public class TarjetaDebito {
 
@@ -21,5 +21,6 @@ public class TarjetaDebito {
     private String estado;
     private String fechaVencimiento;
     private Float limiteExtraccion;
-    private Integer numeroCuneta;
+    private Integer numeroCuenta;
+    private String tipoTarjeta;
 }
